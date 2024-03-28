@@ -76,7 +76,7 @@ template{display: none;} /* prettier-ignore */
 	--nav-item-letter-spacing: 0.04rem;
 	--nav-item-display: inline-block;
 	--nav-item-margin: 0 0 3rem 0;
-	--nav-item-link-hover: var(--color-primary);
+	--nav-item-link-hover: var(--color-white);
 	--section-tagline-margin: 0;
 	/* Button Variables */
 	--button-display: inline-block;
@@ -88,13 +88,13 @@ template{display: none;} /* prettier-ignore */
 	--button-hover-color: var(--color-white);
 	--button-hover-text-decoration: none;
 	--button-hover-background: var(--color-primary);
-    /* Header and navigation bar*/
-    --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: 1rem;
-    --header-logo-link-left: 0;
+	/* Header Variables */
+	--header-padding: 4rem 0 0;
+	--header-logo-position: relative;
+	--header-logo-link-display: inline-block;
+	--header-logo-link-position: absolute;
+	--header-logo-link-top: -1rem;
+	--header-logo-link-left: 0;
 }
 *,
 *:before,
@@ -212,7 +212,7 @@ a:active {
 	padding: 0.5rem 1rem;
 }
 .nav .nav-link:hover {
-	color: var(--color-white);
+	color: var(--nav-item-link-hover);
 }
 
 ul.row {
@@ -295,16 +295,16 @@ ul.row {
 	padding: 10rem 40rem 2rem 0;
 }
 .header {
-    padding: vsar(--header-padding);
+	padding: var(--header-padding);
 }
 .header-logo {
-    position: var(--header-logo-position);
+	position: var(--header-logo-position);
 }
-.header-logo {
-    display: var(--header-logo-link-display);
-    position: var(--header-logo-link-position);
-    top: var(--header-logo-link-top);
-    left: var(--header-logo-link-left);
+.header-logo a {
+	display: var(--header-logo-link-display);
+	position: var(--header-logo-link-position);
+	top: var(--header-logo-link-top);
+	left: var(--header-logo-link-left);
 }
 .nav .nav-link::before {
 	content: "";
