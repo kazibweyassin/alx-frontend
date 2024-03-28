@@ -197,7 +197,7 @@ ul.row {
 }
 .col-1-2 {
 	width: 50%;
-	float: left;
+	float: right;
 	padding: 0.5rem;
 }
 .footer-copyright {
